@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>倩女幽魂</title>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <script type="text/javascript">
+        /* function init(){
+         var width=document.documentElement.clientWidth;
+         //动态设置设备的html字体大小
+         document.documentElement.style.fontSize = width / 320 * 12 + 'px';
+         if(width<=320){
+         document.documentElement.style.fontSize = 12 + 'px';
+         }
+         }
+
+         init()
+         //当屏幕宽度变化时
+         window.addEventListener('resize',init)
+         //当切换横竖屏时
+         window.addEventListener('orientationchange',init) */
+
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        if (clientWidth >= 640) {
+                            docEl.style.fontSize = '100px';
+                        } else {
+                            docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                        }
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="top">
+            <a href="https://adl.netease.com/d/g/qnm/c/gw_m"></a>
+        </div>
+        <div class="next">
+            <div class="main">
+                <a href="http://qnm.163.com/"></a>
+                <img src="../img/2.png" alt=""/>
+            </div>
+            <div class="one">
+                <a href="http://qnm.163.com/">
+                    <div></div>
+                </a>
+            </div>
+            <div class="two">
+                <a href="https://adl.netease.com/d/g/qnm/c/gw_m"></a>
+            </div>
+            <div class="three">
+                <a href="http://qnm.163.com/"></a>
+                <div class="area">风云聚-白衣胜雪</div>
+            </div>
+            <div class="fuli-wrap">
+                <div class="fuli-title"></div>
+                <div class="fuli"></div>
+            </div>
+            <div class="youxi-wrap">
+                <div class="youxi-title"></div>
+                <div class="youxi">
+                    <div class="img-box">
+                        <img src="../img/13.jpg" alt=""/>
+                        <img src="../img/14.jpg" alt=""/>
+                        <img src="../img/15.jpg" alt=""/>
+                        <img src="../img/16.jpg" alt=""/>
+                        <img src="../img/17.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="wanfa-wrap">
+                <div class="wanfa-title"></div>
+                <div class="wanfa">
+                    <div class="mz">
+                        <div class="jieshao"></div>
+                    </div>
+                </div>
+                <div class="wanfaxg">
+                    <img src="../img/22.png" alt=""/>
+
+                    <div class="tubiao left"></div>
+                    <div class="tubiao right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="foot-son">
+                <a href="http://qnm.163.com/" target="_blank" class="foot-son-1"></a>
+                <a href="https://weibo.com/qnyhsy" target="_blank" class="foot-son-1"></a>
+                <a href="http://qnm.netease.com/forum.php" target="_blank" class="foot-son-1"></a>
+                <a href="https://ds.163.com/index.html?from16163=qnm" target="_blank" class="foot-son-1"></a>
+            </div>
+            <div class="foot-son2">
+                <a href="#fooss" class="foot-son2-son" id="fooss"></a>
+                <div class="foot-son2-son-brother">
+                    <div class="div1">
+                        <i></i>
+                        <em>复制链接</em>
+                    </div>
+                    <div class="div2">
+                        <i></i>
+                        <a href="https://weixin.qq.com/" target="_blank"><em>微信</em></a>
+                    </div>
+                    <div class="div2 teshu1">
+                        <i></i>
+                        <a href="http://www.yixin.im/" target="_blank"><em>易信</em></a>
+                    </div>
+                    <div class="div2 teshu2">
+                        <i></i>
+                        <a href="https://weibo.com/" target="_blank"><em>微博</em></a>
+                    </div>
+                    <div class="div1 teshu3">
+                        <i></i>
+                        <a href="https://qzone.qq.com/" target="_blank"><em>QQ空间</em></a>
+                    </div>
+                </div>
+                <a href="http://localhost:63342/untitled1/page/index.html" class="foot-son2-son1" ></a>
+                <a href="http://qnm.163.com/" class="foot-son2-son2" target="_blank"></a>
+
+            </div>
+        </div>
+        <div class="finally">
+            <p>杭州网易雷火科技有限公司版权所有 ©1997-2019</p>
+            <p>
+                <a href="http://game.163.com/news/2010/6/9/442_216957.html" target="_blank">《网络游戏管理暂行办法》</a>
+            </p>
+            <p>文网游备字〔2016〕Ｍ-RPG 1694 号</p>
+            <p>《网络文化经营许可证》</p>
+            <p>浙网文[2019]1372-138号</p>
+            <p>审批文号：新广出审[2017]1354号</p>
+            <p>出版物号：ISBN 978-7-7979-4919-4</p>
+        </div>
+    </div>
+
+</body>
+</html>
